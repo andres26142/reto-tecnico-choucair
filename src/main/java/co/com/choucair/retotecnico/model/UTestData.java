@@ -17,6 +17,8 @@ public class UTestData {
     private String strMobileDevice;
     private String strModel;
     private String strMobileOs;
+    private String strPassword;
+    private String strSuccessfulSignUpMessage;
 
     public String getStrFistName() {
         return strFistName;
@@ -144,5 +146,21 @@ public class UTestData {
 
     public void setStrMobileOs(String strMobileOs) {
         this.strMobileOs = strMobileOs;
+    }
+
+    public String getStrPassword() {
+        return strPassword;
+    }
+
+    public void setStrPassword(String strPassword) {
+        this.strPassword = strPassword;
+    }
+
+    public String getStrSuccessfulSignUpMessage() {
+        return strSuccessfulSignUpMessage;
+    }
+
+    public void setStrSuccessfulSignUpMessage(String strSuccessfulSignUpMessage) {
+        this.strSuccessfulSignUpMessage = strSuccessfulSignUpMessage;
     }
 }

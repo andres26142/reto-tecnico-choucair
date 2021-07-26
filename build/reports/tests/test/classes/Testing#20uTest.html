@@ -29,19 +29,19 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="ignored">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>ignored</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.050s</div>
+<div class="counter">29.404s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox skipped" id="successRate">
-<div class="percent">-</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,13 +61,195 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard error</a>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="sign up to utest.com"></a>
+<h3 class="failures">sign up to utest.com</h3>
+<span class="code">
+<pre>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1149)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:811)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget.performAs(EnterValueIntoTarget.java:18)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$xZxtOUfO.performAs$accessor$lKOS6dEn(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$xZxtOUfO.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at co.com.choucair.retotecnico.tasks.Fill.performAs(Fill.java:60)
+	at co.com.choucair.retotecnico.tasks.Fill$ByteBuddy$qPVczRXI.performAs$accessor$rNrEfCAl(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at co.com.choucair.retotecnico.tasks.Fill$ByteBuddy$qPVczRXI.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at co.com.choucair.retotecnico.stepdefinitions.UTestStepDefinitions.heIntroducesHisPersonalData(UTestStepDefinitions.java:37)
+	at ✽.he introduces his personal data(src/test/resources/features/uTest.feature:9)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.id: city to be enabled (tried for 5 second(s) with 100 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1146)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:811)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget.performAs(EnterValueIntoTarget.java:18)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$xZxtOUfO.performAs$accessor$lKOS6dEn(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$xZxtOUfO.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at co.com.choucair.retotecnico.tasks.Fill.performAs(Fill.java:60)
+	at co.com.choucair.retotecnico.tasks.Fill$ByteBuddy$qPVczRXI.performAs$accessor$rNrEfCAl(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at co.com.choucair.retotecnico.tasks.Fill$ByteBuddy$qPVczRXI.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at co.com.choucair.retotecnico.stepdefinitions.UTestStepDefinitions.heIntroducesHisPersonalData(UTestStepDefinitions.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#city&quot;}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ODNVN05', ip: '192.168.20.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\ander\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59507}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d4363cb51b686892ef0504b1f5b4c0b3
+*** Element info: {Using=id, value=city}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 98 more
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -78,45 +260,108 @@
 </tr>
 </thead>
 <tr>
-<td class="skipped">sign up to utest.com</td>
-<td class="skipped">-</td>
-<td class="skipped">ignored</td>
+<td class="failures">sign up to utest.com</td>
+<td class="failures">29.404s</td>
+<td class="failures">failed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@291a84e9
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2131ee3a
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5c88f9d7
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5d9baa97
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOS=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest, When he clicks on the join today button, And he introduces his personal data
-| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOS | strPassword |
-| Andres | Hernandez | andrestest@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 |, Then the register is complete
-| strQuestion |
+<pre>[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1096668e
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@68fc63c7
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@491c68eb
+Jul 26, 2021 1:31:46 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 92.0.4515.43 (8c61b7e2989f2990d42f859cac71319137787cce-refs/branch-heads/4515@{#306}) on port 5044
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 26, 2021 1:31:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@42376aa8
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@73f9394e
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@49cc271e
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]], When he clicks on the join today button [Julian click on [Julian clicks on button that takes us to the sign up page]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]], When he clicks on the join today button [Julian click on [Julian clicks on button that takes us to the sign up page]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]], When he clicks on the join today button [Julian click on [Julian clicks on button that takes us to the sign up page]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@63d7ca56
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1ecd3142
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4bda496f
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]], When he clicks on the join today button [Julian click on [Julian clicks on button that takes us to the sign up page]], And he introduces his personal data
+| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOs | strPassword |
+| Andres | Hernandez | andrestest1@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 | [Julian fill [Julian enters 'Andres' into field that contains the first name]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@fd12920
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]], When he clicks on the join today button [Julian click on [Julian clicks on button that takes us to the sign up page]], And he introduces his personal data
+| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOs | strPassword |
+| Andres | Hernandez | andrestest1@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 | [Julian fill [Julian enters 'Andres' into field that contains the first name, Julian enters 'Hernandez' into field that contains the last name]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@77572d77
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]], When he clicks on the join today button [Julian click on [Julian clicks on button that takes us to the sign up page]], And he introduces his personal data
+| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOs | strPassword |
+| Andres | Hernandez | andrestest1@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 | [Julian fill [Julian enters 'Andres' into field that contains the first name, Julian enters 'Hernandez' into field that contains the last name, Julian enters 'andrestest1@gmail.com' into field that contains the email]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3e3cb4a4
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]], When he clicks on the join today button [Julian click on [Julian clicks on button that takes us to the sign up page]], And he introduces his personal data
+| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOs | strPassword |
+| Andres | Hernandez | andrestest1@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 | [Julian fill [Julian enters 'Andres' into field that contains the first name, Julian enters 'Hernandez' into field that contains the last name, Julian enters 'andrestest1@gmail.com' into field that contains the email, Julian select May on field to select the birth month]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2af37390
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]], When he clicks on the join today button [Julian click on [Julian clicks on button that takes us to the sign up page]], And he introduces his personal data
+| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOs | strPassword |
+| Andres | Hernandez | andrestest1@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 | [Julian fill [Julian enters 'Andres' into field that contains the first name, Julian enters 'Hernandez' into field that contains the last name, Julian enters 'andrestest1@gmail.com' into field that contains the email, Julian select May on field to select the birth month, Julian select 10 on field to select the birth day]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@39071091
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]], When he clicks on the join today button [Julian click on [Julian clicks on button that takes us to the sign up page]], And he introduces his personal data
+| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOs | strPassword |
+| Andres | Hernandez | andrestest1@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 | [Julian fill [Julian enters 'Andres' into field that contains the first name, Julian enters 'Hernandez' into field that contains the last name, Julian enters 'andrestest1@gmail.com' into field that contains the email, Julian select May on field to select the birth month, Julian select 10 on field to select the birth day, Julian select 1998 on field to select the birth year]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@11f428f5
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]], When he clicks on the join today button [Julian click on [Julian clicks on button that takes us to the sign up page]], And he introduces his personal data
+| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOs | strPassword |
+| Andres | Hernandez | andrestest1@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 | [Julian fill [Julian enters 'Andres' into field that contains the first name, Julian enters 'Hernandez' into field that contains the last name, Julian enters 'andrestest1@gmail.com' into field that contains the email, Julian select May on field to select the birth month, Julian select 10 on field to select the birth day, Julian select 1998 on field to select the birth year, Julian clicks on field to select the language]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7b5874e6
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]], When he clicks on the join today button [Julian click on [Julian clicks on button that takes us to the sign up page]], And he introduces his personal data
+| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOs | strPassword |
+| Andres | Hernandez | andrestest1@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 | [Julian fill [Julian enters 'Andres' into field that contains the first name, Julian enters 'Hernandez' into field that contains the last name, Julian enters 'andrestest1@gmail.com' into field that contains the email, Julian select May on field to select the birth month, Julian select 10 on field to select the birth day, Julian select 1998 on field to select the birth year, Julian clicks on field to select the language, Julian enters 'Spanish' into field to select the language]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@416a8046
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]], When he clicks on the join today button [Julian click on [Julian clicks on button that takes us to the sign up page]], And he introduces his personal data
+| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOs | strPassword |
+| Andres | Hernandez | andrestest1@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 | [Julian fill [Julian enters 'Andres' into field that contains the first name, Julian enters 'Hernandez' into field that contains the last name, Julian enters 'andrestest1@gmail.com' into field that contains the email, Julian select May on field to select the birth month, Julian select 10 on field to select the birth day, Julian select 1998 on field to select the birth year, Julian clicks on field to select the language, Julian enters 'Spanish' into field to select the language, Julian types 'ENTER' in field to select the language]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3391021f
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]], When he clicks on the join today button [Julian click on [Julian clicks on button that takes us to the sign up page]], And he introduces his personal data
+| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOs | strPassword |
+| Andres | Hernandez | andrestest1@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 | [Julian fill [Julian enters 'Andres' into field that contains the first name, Julian enters 'Hernandez' into field that contains the last name, Julian enters 'andrestest1@gmail.com' into field that contains the email, Julian select May on field to select the birth month, Julian select 10 on field to select the birth day, Julian select 1998 on field to select the birth year, Julian clicks on field to select the language, Julian enters 'Spanish' into field to select the language, Julian types 'ENTER' in field to select the language, Julian clicks on button that send us to the next page]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4c9d4073
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@520a429c
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]], When he clicks on the join today button [Julian click on [Julian clicks on button that takes us to the sign up page]], And he introduces his personal data
+| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOs | strPassword |
+| Andres | Hernandez | andrestest1@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 | [Julian fill [Julian enters 'Andres' into field that contains the first name, Julian enters 'Hernandez' into field that contains the last name, Julian enters 'andrestest1@gmail.com' into field that contains the email, Julian select May on field to select the birth month, Julian select 10 on field to select the birth day, Julian select 1998 on field to select the birth year, Julian clicks on field to select the language, Julian enters 'Spanish' into field to select the language, Julian types 'ENTER' in field to select the language, Julian clicks on button that send us to the next page, Julian enters 'Bogota' into field that contains the city]]], Then the register is complete
+| strSuccessfulSignUpMessage |
+| Welcome to the world's largest community of freelance software testers! |
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]], When he clicks on the join today button [Julian click on [Julian clicks on button that takes us to the sign up page]], And he introduces his personal data
+| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOs | strPassword |
+| Andres | Hernandez | andrestest1@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 | [Julian fill [Julian enters 'Andres' into field that contains the first name, Julian enters 'Hernandez' into field that contains the last name, Julian enters 'andrestest1@gmail.com' into field that contains the email, Julian select May on field to select the birth month, Julian select 10 on field to select the birth day, Julian select 1998 on field to select the birth year, Julian clicks on field to select the language, Julian enters 'Spanish' into field to select the language, Julian types 'ENTER' in field to select the language, Julian clicks on button that send us to the next page, Julian enters 'Bogota' into field that contains the city]]], Then the register is complete
+| strSuccessfulSignUpMessage |
 | Welcome to the world's largest community of freelance software testers! |]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOS=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest, When he clicks on the join today button, And he introduces his personal data
-| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOS | strPassword |
-| Andres | Hernandez | andrestest@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 |, Then the register is complete
-| strQuestion |
-| Welcome to the world's largest community of freelance software testers! |]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOS=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest, When he clicks on the join today button, And he introduces his personal data
-| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOS | strPassword |
-| Andres | Hernandez | andrestest@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 |, Then the register is complete
-| strQuestion |
-| Welcome to the world's largest community of freelance software testers! |]]
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
-          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
- _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
-(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
- |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
-(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
-                                                                                
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest1@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOs=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest [Julian open up [Julian opens the Utest page]], When he clicks on the join today button [Julian click on [Julian clicks on button that takes us to the sign up page]], And he introduces his personal data
+| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOs | strPassword |
+| Andres | Hernandez | andrestest1@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 | [Julian fill [Julian enters 'Andres' into field that contains the first name, Julian enters 'Hernandez' into field that contains the last name, Julian enters 'andrestest1@gmail.com' into field that contains the email, Julian select May on field to select the birth month, Julian select 10 on field to select the birth day, Julian select 1998 on field to select the birth year, Julian clicks on field to select the language, Julian enters 'Spanish' into field to select the language, Julian types 'ENTER' in field to select the language, Julian clicks on button that send us to the next page, Julian enters 'Bogota' into field that contains the city]]], Then the register is complete
+| strSuccessfulSignUpMessage |
+| Welcome to the world's largest community of freelance software testers! |]
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
 
-TEST PENDING: sign up to utest.com
----------------------------------------------------------------------------------
+TEST FAILED: sign up to utest.com
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Julian enters 'Bogota' into field that contains the city
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected enabled element was not enabled
 </pre>
 </span>
 </div>
@@ -128,7 +373,7 @@ TEST PENDING: sign up to utest.com
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at Jul 26, 2021, 11:01:22 AM</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at Jul 26, 2021, 1:32:16 PM</p>
 </div>
 </div>
 </body>
