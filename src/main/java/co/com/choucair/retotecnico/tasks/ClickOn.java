@@ -14,6 +14,7 @@ public class ClickOn implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
+
         actor.attemptsTo(Click.on(UtestPage.JOIN_TODAY_BUTTON));
     }
 }
