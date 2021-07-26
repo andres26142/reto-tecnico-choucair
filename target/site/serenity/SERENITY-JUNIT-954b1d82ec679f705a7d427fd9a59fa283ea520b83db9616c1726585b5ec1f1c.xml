@@ -1,5 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Testing uTest" skipped="0" tests="1" time="29.42" timestamp="2021-07-26 01:31:45"><testcase name="sign up to utest.com"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
-co.com.choucair.retotecnico.tasks.Fill.performAs(Fill.java:60)&#13;
-co.com.choucair.retotecnico.stepdefinitions.UTestStepDefinitions.heIntroducesHisPersonalData(UTestStepDefinitions.java:37)&#13;
-cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Testing uTest" skipped="0" tests="1" time="103.51" timestamp="2021-07-26 01:49:47"><testcase name="sign up to utest.com"><failure message="Expected answer&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Expected answer
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;</failure><system-err>Expected answer
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+co.com.choucair.retotecnico.stepdefinitions.UTestStepDefinitions.theRegisterIsComplete(UTestStepDefinitions.java:61)&#13;
+✽.the register is complete(src/test/resources/features/uTest.feature:12)&#13;
 </system-err></testcase></testsuite>
