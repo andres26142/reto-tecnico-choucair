@@ -113,7 +113,7 @@ public class Fill implements Task {
 
                 Click.on(UTestSignUpPage.BUTTON_COMPLETE),
 
-                WaitUntil.the(UTestSignUpPage.COMPLETED_REGISTER, WebElementStateMatchers.isEnabled()).forNoMoreThan(60).seconds()
+                WaitUntil.the(UTestSignUpPage.COMPLETED_REGISTER, WebElementStateMatchers.isEnabled()).forNoMoreThan(90).seconds()
         );
     }
 }
