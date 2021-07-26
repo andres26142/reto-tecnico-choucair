@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Testing uTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2021-07-26T16:01:20" hostname="DESKTOP-ODNVN05" time="0.05">
+  <properties/>
+  <testcase name="sign up to utest.com" classname="Testing uTest" time="0.05">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@291a84e9
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2131ee3a
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5c88f9d7
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5d9baa97
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOS=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest, When he clicks on the join today button, And he introduces his personal data
+| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOS | strPassword |
+| Andres | Hernandez | andrestest@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 |, Then the register is complete
+| strQuestion |
+| Welcome to the world's largest community of freelance software testers! |]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOS=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest, When he clicks on the join today button, And he introduces his personal data
+| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOS | strPassword |
+| Andres | Hernandez | andrestest@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 |, Then the register is complete
+| strQuestion |
+| Welcome to the world's largest community of freelance software testers! |]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [sign up to utest.com:Example: {strFistName=Andres, strLastName=Hernandez, strEmailAddress=andrestest@gmail.com, strBirthMonth=May, strBirthDay=10, strBirthYear=1998, strUserLanguage=Spanish, strCity=Bogota, strZipPostalCode=507001, strCountry=Colombia, strComputerOs=Windows, strOsVersion=10, strComputerLanguage=Spanish, strMobileDevice=Motorola, strModel=One Fusion, strMobileOS=Android 10, strPassword=ConTrasena.J1} [Given that julian wants to sign up to utest, When he clicks on the join today button, And he introduces his personal data
+| strFistName | strLastName | strEmailAddress | strBirthMonth | strBirthDay | strBirthYear | strUserLanguage | strCity | strZipPostalCode | strCountry | strComputerOs | strOsVersion | strComputerLanguage | strMobileDevice | strModel | strMobileOS | strPassword |
+| Andres | Hernandez | andrestest@gmail.com | May | 10 | 1998 | Spanish | Bogota | 507001 | Colombia | Windows | 10 | Spanish | Motorola | One Fusion | Android 10 | ConTrasena.J1 |, Then the register is complete
+| strQuestion |
+| Welcome to the world's largest community of freelance software testers! |]]
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
+ _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
+(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
+ |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
+(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
+                                                                                
+
+TEST PENDING: sign up to utest.com
+---------------------------------------------------------------------------------
+]]></system-err>
+</testsuite>
