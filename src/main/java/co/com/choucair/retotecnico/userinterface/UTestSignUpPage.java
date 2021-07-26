@@ -4,7 +4,7 @@ import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class UTestSignUpPage extends PageObject {
+public class UTestSignUpPage {
 
     public static final Target INPUT_FIRSTNAME=Target.the("field that contains the first name").located(By.id("firstName"));
     public static final Target INPUT_LASTNAME=Target.the("field that contains the last name").located(By.id("lastName"));
